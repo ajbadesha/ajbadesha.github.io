@@ -1,0 +1,124 @@
+.general-question-all
+{
+	padding: 91px 0;
+	min-height: 697px;
+	.section-title
+	{
+		margin-bottom: 30px;
+	}
+	.single-tip
+	{
+		@media(max-width: 1199px)
+		{
+			margin: 0 0 40px 0;
+		}
+		.bg-post-excerpt
+		{
+			border-bottom: none;
+			margin: 0;
+			padding: 0;
+		}
+		a.read-more
+		{
+			font-family: $font;
+			font-size: 13px;
+			color: #c1c1c1;
+			display: block;
+			margin: 5px 0 0 0;
+		}
+		.bg-featured-image
+		{
+			background: transparent;
+			width: 200px;
+			margin: 0 0 50px 0;
+			img
+			{
+				width: auto;
+			}
+
+		}
+	}
+	.single-tip:last-child
+	{
+		@media(max-width: 1199px)
+		{
+			margin: 0;
+		}
+		.bg-featured-image
+		{
+			margin: 0;
+			@media(max-width: 1199px)
+			{
+				margin: 0 0 50px 0;
+			}
+		}
+	}
+	.general-questions
+	{
+		padding: 0 33px 0 0;
+		@media(max-width: 1199px)
+		{
+			padding: 0;
+		}		
+		.panel
+		{
+			border-radius: 0;
+			border: none;
+			margin: 20px 0 0 0;
+			.inner-box
+			{
+				padding: 5px 30px 10px 60px;
+				background: #f3f3f3;
+			}
+		}
+		.accordion a[aria-expanded="true"] {
+		    background: #353543;
+		    color: #fff;
+		}
+		.accordion a[role=button] {
+		    padding: 16px 0 16px 60px !important;
+		    color: #242424;
+		    background: #f3f3f3;
+		}
+		.accordion a[role=button] {
+		    font-size: 18px;
+		    font-family: $font;
+		    color: #000;
+		    display: block;
+		   	padding: 25px 0;
+		    display: block;
+		    text-decoration: none !important;
+		    position: relative;
+		}
+		.accordion a[role=button].collapsed:before {
+		    position: absolute;
+		    top: 14px;
+		    left: 15px;
+		    width: 30px;
+		    height: 30px;
+		    content: '+';
+		    font-family: 'Raleway';
+		    font-size: 40px;
+		    line-height: 30px;
+		    font-weight: normal;
+		    text-align: center;
+		    color: #aeaeae;
+		    background: #fff;
+		}
+		.accordion a[role=button]:before {
+		    position: absolute;
+		    top: 14px;
+		    left: 15px;
+		    width: 30px;
+		    height: 30px;
+		    content: '-';
+		    font-family: 'Raleway';
+		    font-size: 40px;
+		    line-height: 22px;
+		    font-weight: normal;
+		    text-align: center;
+		    color: #fff;
+		    background: #3b5e98;
+		}
+	}
+}

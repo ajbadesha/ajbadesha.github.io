@@ -1,0 +1,169 @@
+.prices-contents{
+	padding-bottom: 50px;
+	p{
+		margin-bottom: 45px;
+	}
+}
+
+.price-grid{
+	margin-bottom: 50px;
+	.media{
+		background: #f3f3f3;
+	}
+	.media-left{
+		padding-right: 40px;
+		@media (max-width: 1199px){
+			padding-right: 20px;
+		}
+		@media (max-width: 479px){
+			padding-right: 0;
+			display: block;
+		}
+		a{
+			display: block;
+			width: 270px;
+			height: auto;
+			background: #000;
+			overflow: hidden;
+			@media (max-width: 1199px){
+				width: 200px;
+			}
+			@media (max-width: 767px){
+				width: 100%;
+			}
+			img{
+				width: 100%;
+				opacity: 1;
+				@include transition;				
+			}
+			&:hover,&:focus{
+				img{
+					transform: scale(1.1);
+					opacity: 0.8;
+				}
+			}
+		}
+	}
+	
+	.media-body{
+		vertical-align: middle;
+		@media (max-width: 767px){
+			padding: 20px;
+		}
+	}
+}
+
+.price-grid-title{
+	font: bold 24px/30px $font3;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #242424;	
+}
+
+a.price-grid-title{
+	&:hover,&:focus{
+		color: #09a3d5;
+		text-decoration: underline;
+	}
+}
+
+.price-grid-price{
+	font: bold 50px/1 $font3;
+	color: #242424;
+	margin: 0;
+	small{
+		font-weight: normal;
+		font-size: 20px;
+		color: #898989;
+	}
+}
+
+.price-grid-contact{
+	background: #f3f3f3;
+	padding: 45px 37px 37px;
+	@media (max-width: 1199px){
+		padding: 27px;
+	}
+	.price-grid-title{
+		margin-bottom: 23px;
+		@media (max-width: 1199px){
+			margin-bottom: 15px;
+		}
+	}
+	.btn{
+		@media (max-width: 1199px){
+			line-height: 45px;
+			padding: 0 25px;
+		}
+	}
+}
+
+.big-p{
+	font-weight: 400;
+	font: 20px/26px $font;
+	letter-spacing: 0.3px;
+	color: #242424;
+}
+
+.transparency-contents{
+	p{
+		margin-bottom: 25px;
+		letter-spacing: 0.3px;
+	}
+	.big-p{
+		margin-bottom: 10px;
+		@media (min-width: 1200px){
+			padding-right: 100px;
+		}
+	}
+}
+
+.t3h{
+	font-size: 26px;
+	letter-spacing: 0.3px;
+	font-family: $font3;
+	font-weight: bold;
+	color: #242424;
+}
+
+.p3h{
+	font-size: 25px;
+	letter-spacing: 0.3px;
+	font-family: $font3;
+	font-weight: bold;
+	color: #242424;
+	margin-top: 30px;
+	&.mb25{
+		margin-bottom: 25px;
+	}
+}
+
+.t3h2{
+	font-size: 22px;
+	letter-spacing: 0.3px;
+	font-family: $font;
+	font-weight: bold;
+	color: #898989;
+	margin-top: 30px;
+}
+
+.t2h{
+	font-weight: bold;
+	letter-spacing: 0.3px;
+	font-family: $font3;	
+	color: #242424;
+}
+
+.pmethod-contents{
+	.big-p{
+		margin-bottom: 45px;
+	}
+	p{
+		margin-bottom: 25px;
+		& + img{
+			@media (max-width: 767px){
+				margin-bottom: 30px;
+			}
+		}
+	}
+}

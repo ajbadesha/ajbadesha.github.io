@@ -1,0 +1,123 @@
+body{
+//	position: relative;
+}
+
+.m0{margin: 0;}
+.p0{padding: 0;}
+
+.container{
+    @media (min-width: 1281px){
+        width:1200px;
+    }
+	
+	@media (max-width: 767px) and (min-width: 361px){
+		padding: 0 25px;
+	}
+}
+
+a,.btn,button{
+    text-decoration: none;
+    outline: none;
+    @include transition();
+	&:after,&:before{
+		@include transition;
+	}
+    &:hover,&:focus{
+        text-decoration: none;
+        outline: none;
+    }
+}
+
+section, header, footer{
+    &.row{
+        margin: 0;
+        position: relative;
+    }
+}
+
+p{
+	font: 15px/26px $font;
+	color: #898989;
+	@media (max-width: 1199px){
+		font-size: 14px;
+		line-height: 24px;
+	}
+}
+
+.site-contents{
+	padding: 100px 0;
+	@media (max-width: 767px){
+		padding: 70px 0;
+	}
+}
+
+.btn{
+	border-radius: 3px;
+	text-transform: uppercase;
+	font: bold 18px/50px $font2;
+	padding: 0 35px;
+	color: #fff;
+	border: none;
+	@include transition;
+}
+
+.btn-big{
+	line-height: 58px;
+	padding: 0 30px;
+}
+
+.btn-sm{
+	line-height: 37px;
+	padding: 0 20px;
+}
+
+.btn-outline{
+	border: 1px solid #fff;
+	line-height: 48px;
+}
+
+.btn-primary{
+	background-image: -moz-linear-gradient( 90deg, rgb(212,24,24) 0%, rgb(227,61,61) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(212,24,24) 0%, rgb(227,61,61) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(212,24,24) 0%, rgb(227,61,61) 100%);
+@include transition;
+	&:hover,&:focus{
+		background: #099bd7;
+	}
+}
+
+.section-title{
+	font: bold 38px/48px $font3;
+	margin-top: 0;
+	margin-bottom: 15px;
+	color: #242424;
+	letter-spacing: 0.15px;
+	@media (max-width: 767px){
+		font-size: 33px;
+	}
+	&:after{
+		display: inline-block;
+		content: '';
+		width: 35px;
+		height: 2px;
+		background: #099bd7;
+		margin-left: 10px;
+	}
+	
+	&.style2{
+		text-align: center;
+		&:after{
+			display: none;
+		}
+	}
+	
+	& + p{
+		color: #8e8d8d;
+		letter-spacing: 0.3px;
+		margin-bottom: 25px;
+	}
+	
+	&.blue-c{
+		color: #099bd7;
+	}
+}

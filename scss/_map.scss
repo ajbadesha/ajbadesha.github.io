@@ -1,0 +1,24 @@
+.map
+{
+	@media(max-width: 1199px)
+	{
+		.map-l, .map-r
+		{
+			width: 100% !important;
+			img
+			{
+				width: 100%;
+			}
+		}
+	}
+	.map-l
+	{
+		width: 745px;
+		float: left;
+	}
+	.map-r
+	{
+		width: calc(100% - 745px);
+		float: left;
+	}
+}

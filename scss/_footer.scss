@@ -1,0 +1,248 @@
+.footer-contacts{
+	padding: 23px 0 22px 0;
+	background: url(../images/bg5.jpg) no-repeat fixed center center;
+	&:before{
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: #001125;
+		opacity: 0.7;
+	}
+	.container{
+		position: relative;
+		z-index: 2;
+	}
+}
+
+.footer-contact{
+	font: 15px/22px $font;
+	color: #fff;
+	letter-spacing: 0.3px;	
+	@media (max-width: 1199px){
+		font-size: 14px;
+	}
+	& + .footer-contact{
+		@media (max-width: 991px){
+			margin-top: -1px;
+		}
+	}
+	.media{
+		border: 1px solid transparentize(#fff,0.8);
+		background: transparentize(#011120,0.3);
+	}
+	.media-left{
+		vertical-align: middle;
+		padding: 0;
+		background: transparentize(#000,0.5);
+		font-size: 30px;
+		color: #489dc5;
+		i{
+			text-align: center;
+			width: 70px;
+		}
+	}
+	.media-body{
+		padding: 24px 18px;
+		@media (max-width: 767px){
+			word-break: break-all;
+		}
+	}
+	strong{
+		text-transform: uppercase;
+		display: block;
+		color: #9bb2c7;
+	}
+}
+
+.site-footer{
+	background: url(../images/bg6.jpg) no-repeat fixed center 0 #111f2d;
+	background-size: cover;
+	.container{
+		position: relative;
+		z-index: 3;
+	}
+}
+
+.footer-sidebar{
+	padding: 32px 0 0;
+}
+
+.widget-footer{	
+	.widget-title{
+		color: #eeeeee;
+		font-family: $font;
+		font-size: 16px;
+		font-weight: bold;
+		letter-spacing: 0.15px;
+		line-height: 1;
+		text-transform: uppercase;
+		margin: 38px 0 30px;
+		&:after{
+			content: '';
+			width: 45px;
+			height: 1px;
+			background: #6dd1ff;
+			display: block;
+			margin: 15px 0 0;
+		}
+	}
+	
+	p{
+		font-family: $font;
+		line-height: 24px;
+		color: #7e95a2;
+		letter-spacing: 0.3px;
+	}
+	
+	.menu{
+		list-style: none;
+		padding: 0;
+		margin: 0 0 45px;
+		li{
+			& + li{
+				margin-top: 15px;
+			}
+			&:before{
+				display: inline-block;
+				content: "\f105";
+				font-family: "FontAwesome";
+				color: #7e95a2;
+				width: 18px;
+			}
+			a{
+				letter-spacing: 0.3px;
+				line-height: 20px;
+				color: #7e95a2;
+				&:hover,&:focus{
+					color: #489dc5;
+				}
+			}
+		}
+	}
+}
+
+.emmergency-support-banner{
+	margin-right: 35px;
+	float: right;
+	@media (max-width: 991px){
+		display: table;
+		margin: 0 auto;
+		float: none;
+	}
+}
+
+.footer-social{
+	margin-top: 28px;
+	li{
+		& + li{
+			margin-left: 10px;
+		}
+		a{
+			width: 28px;
+			height: 28px;
+			text-align: center;
+			line-height: 26px;
+			border: 1px solid #5e7285;
+			border-radius: 100%;
+			padding: 0;
+			color: #5e7285;
+			&:hover,&:focus{
+				color: #489dc5;
+				border-color: #489dc5;
+				background: none;
+			}
+		}
+	}
+}
+
+.newsletter-form{
+	margin: 0;
+	padding: 20px 30px;
+	border: 1px dashed transparentize(#fff,0.75);
+	background: transparentize(#070f17,0.75);
+}
+
+.nform-texts{
+	float: left;
+	width: 450px;
+	font: italic 17px/24px $font;
+	color: #4ba4cd;
+	letter-spacing: 0.3px;
+	margin-right: 30px;
+	@media (max-width: 1199px){
+		margin-right: 15px;
+		width: 430px;
+	}
+	@media (max-width: 991px){
+		margin-right: 0;
+		margin-bottom: 15px;
+		width: 100%;
+	}
+}
+
+.nform-input{
+	float: left;
+	width: 436px;
+	margin-right: 30px;
+	border-radius: 0;
+	background: none;
+	height: 43px;
+	border: 1px solid transparentize(#fff,0.80);
+	background: transparentize(#000,0.80);
+	@media (max-width: 1199px){
+		width: 265px;
+		margin-right: 15px;
+	}
+	@media (max-width: 991px){
+		width: calc(100% - 165px);
+	}
+	@media (max-width: 767px){
+		width: 100%;
+		margin-right: 0;
+	}
+}
+
+.nform-btn{
+	float: left;
+	padding: 0 30px;
+	line-height: 46px;
+	@media (max-width: 1199px){
+		padding: 0 25px;
+	}
+	@media (max-width: 991px){
+		padding: 0 24px;
+		width: 150px;
+	}
+	@media (max-width: 767px){
+		width: 100%;
+		margin-top: 15px;
+	}
+}
+
+.copyright-row{
+	margin: 25px 0 40px;	
+	font: 14px/26px $font;
+	letter-spacing: 0.3px;
+	color: #7e95a2;
+	a{
+		color: #7e95a2;
+	}
+}
+
+.copyright-texts{
+	float: left;
+}
+.credit-texts{
+	float: right;
+}
+
+.copyright-texts,
+.credit-texts{
+	@media (max-width: 767px){
+		width: 100%;
+	}
+}

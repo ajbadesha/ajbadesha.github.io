@@ -1,0 +1,125 @@
+section.plumbing-repairing
+{
+	background: #eeeff4;
+
+	.plumbing-repairing-left
+	{
+		background: url("../images/homepage3/plumbing1.jpg") left center  no-repeat;
+		min-height: 550px;
+		float: left;
+		.nav-tabs
+		{
+			border-bottom: none;
+			width: 370px;
+			float: right;
+			padding: 74px 0 ;
+			min-height: 550px;
+			@media(max-width: 767px)
+			{
+				width: 100%;
+			}
+			li
+			{
+				width: 100%;
+				margin: 0;
+				border-bottom: 1px solid #3e4759;
+				a
+				{
+					border-radius: 0;
+					margin: 0;
+					font-family: $font2;
+					font-size: 18px;
+					padding: 20px 0 20px 30px;
+					border: none;
+					color: #fff;
+					text-transform: uppercase;
+					font-weight: bold;
+				}
+			}
+			li:hover, li.active
+			{
+				a
+				{
+					background: #2875b1;
+				}
+			}
+			li:hover:before, li.active:before
+			{
+				width: 0; 
+				  height: 0; 
+				  border-top: 10px solid transparent;
+				  border-bottom: 10px solid transparent; 
+				  border-right:10px solid #eeeff4; 
+				  content: "";
+				  position: absolute;
+				  right: 0;
+				  z-index: 100;
+				  top: 22px;
+			}
+			li:first-child
+			{
+				border-top: 1px solid #3e4759;
+			}
+		}
+		@media (max-width: 1600px) and (min-width: 1200px)
+		{
+			width: 40%;
+		}
+		@media(min-width: 1800px)
+		{
+			width: 745px;
+		}
+	}
+	.plumbing-repairing-right
+	{
+		width: calc(100% - 745px);
+		background: #eeeff4;
+		float: left;
+    	@media(max-width: 1199px)
+		{
+			width: 100%;
+		}
+		.click-tab
+    	{
+    		-webkit-transition-delay: 2s; 
+			transition-delay: 2s;
+    	}
+		.tab-content
+		{
+			padding: 67px 0 66px 70px;
+			width: 770px;
+			min-height: 550px;
+			@media(max-width: 1199px)
+			{
+				width: 100%;
+				padding: 20px;
+			}
+		}
+		h2.this-title
+		{
+			margin: 0 0 30px 0;
+			font-family: $font3;
+			font-weight: bold;
+			font-size: 38px;
+		}
+		p
+		{
+			padding: 15px 0;
+		}
+		a.read-more
+		{
+			font-size: 14px;
+			text-transform: uppercase;
+			color: #000;
+			font-weight: bold;
+			margin: 10px 0 0 0;
+			display: block;
+			i
+			{
+				margin: 0 0 0 10px;
+			}
+		}
+	}
+	
+	
+}

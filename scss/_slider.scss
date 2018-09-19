@@ -1,0 +1,155 @@
+.slider-caption{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 195px;
+	@include transition;
+	@media (max-width: 1440px){
+		top: 120px;
+	}
+	@media (max-width: 1199px){
+		top: 80px;
+	}
+	@media (max-width: 991px){
+		top: 20px;
+	}
+	.this-ttitle,
+	.this-mtitle{
+		text-transform: uppercase;
+		font: bold 25px/1 $font2;
+		margin: 0 0 10px;
+		color: #fff;		
+		@include transition;
+		@media (max-width: 1199px){
+			font-size: 24px;
+			margin-bottom: 5px;
+		}
+		@media (max-width: 767px){
+			font-size: 18px;
+		}
+		
+		&.blue{
+			color: #266fac;
+		}
+	}
+	
+	.this-mtitle{
+		font-weight: 800;
+		font-size: 50px;
+		margin-bottom: 18px;
+		@include transition;
+		@media (max-width: 1199px){
+			font-size: 36px;
+			margin-bottom: 12px;
+		}
+		@media (max-width: 767px){
+			font-size: 26px;
+		}
+	}
+	
+	.btn{
+		@media (max-width: 1199px){
+			font-size: 16px;
+			padding: 0 25px;
+			line-height: 52px;
+		}
+	}
+	
+	
+	/*Animation*/
+//	.this-ttitle,
+//	.this-mtitle,
+//	.slider-list,
+//	.btn{		
+//		transition: all 1s linear;
+//		position: relative;
+//		opacity: 0;
+//	}
+//	
+//	.this-ttitle{
+//		top: -50px;
+//		transition-delay: 300ms;
+//	}
+//	
+//	.this-mtitle{
+//		left: -100px;
+//		transition-delay: 600ms;
+//	}
+//	
+//	.slider-list{
+//		left: 150px;
+//	}
+//	
+//	.btn{		
+//		right: -100px;
+//		transition-delay: 900ms;
+//	}
+}
+
+
+.main-slider{
+	margin-bottom: 10px;
+	
+	.owl-item img{
+		@media (max-width: 767px){
+			height: 264px;
+			width: auto;
+		}
+	}
+	
+	.owl-prev,.owl-next{
+		width: 40px;
+		background-color: transparentize(#000,0.2);
+		line-height: 40px;
+		text-align: center;
+		color: #fff;
+		position: absolute;
+		top: 50%;
+		margin-top: -20px;
+		opacity: 0;
+		@include transition;
+		@media (max-width: 991px){
+			opacity: 1;
+		}
+		@media (max-width: 767px){
+			display: none;
+		}
+	}
+	.owl-prev{
+		left: 0;
+	}
+	.owl-next{
+		right: 0;
+	}
+	
+	&:hover,&:focus{
+		.owl-prev,.owl-next{
+			opacity: 1;
+		}
+	}
+}
+
+.slider-list{
+	margin-bottom: 25px;
+	@media (max-width: 1199px){
+		margin-bottom: 20px;
+	}
+	li{
+		letter-spacing: 0.3px;
+		font: 500 20px/35px $font2;
+		color: #fff;
+		padding-left: 35px;
+		background: url(../images/icons/list-check.jpg) no-repeat scroll left center;
+		@media (max-width: 1199px){
+			font-size: 18px;
+			line-height: 26px;
+		}
+		@media (max-width: 767px){
+			font-size: 14px;
+			line-height: 24px;
+		}
+	}
+}
+
+/*Slider 2*/
+@import "slider2";
